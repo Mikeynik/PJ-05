@@ -1,0 +1,124 @@
+@keyframes showText {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    margin: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+.button:hover{
+    background-color: lightblue;
+}
+
+.button:active{
+    background-color: lightgoldenrodyellow;
+}
+
+.button.start{
+    align-self: center;
+
+    width: 150px;
+    height: 50px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    font-size: x-large;
+}
+
+#death-screen{
+    display: none;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    background-color: rgba(8, 8, 8, 0.932);
+}
+
+#death-screen.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#death-text{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(187, 19, 13);
+    font-size: 300px;
+    user-select: none;
+    position: absolute;
+}
+
+#restart {
+    background-color: brown;
+    color: black;
+    border-block-color: brown;
+    height: 63px;
+    width: 178px;
+    font-size: 29px;
+    border-radius: 37px;
+    position: relative;
+    margin-top: 380px;
+    }
+
+
+#death-text.show{
+    animation: showText 3s ease-out;
+}
+
+#game-field{
+    background-color: rgb(175, 240, 204);
+}
+
+#game-field > tr > td{
+    min-width: 10px;
+    min-height: 10px;
+
+    max-width: 10px;
+    max-height: 10px;
+
+    width: 10px;
+    height: 10px;
+}
+
+.score-container{
+    margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <div class="button start" onclick="startGame()">Старт</div>
+    <div class="table-container">
+        <table>
+            <tbody id="game-field"></tbody>
+        </table>
+    </div>
+    <div class="score-container">
+        <div class="current-score">Текущий: 000</div>
+        <div class="best-score">Лучший: 000</div>
+    </div>
+    <div id="death-screen" class="" onclick="window.location.reload()">
+        <div id="death-text" class="">YOU DIED</div>
+        <button id="restart" class="">Try Again</button>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="meh.js"></script>
+</html>
